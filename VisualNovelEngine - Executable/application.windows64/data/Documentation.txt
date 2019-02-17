@@ -1,0 +1,11 @@
+SCENE: bg
+-Changes background to bg.png located in the Backgrounds folder
+MUSIC: song
+-plays song.mp3 located in the Music folder
+MUSIC: STOP
+-stops current music. Must be used before playing a new song to prevent overlap.
+Character[EMOTION]: Text
+-Character speaks with Character - EMOTION.png inside the Characters folder being displayed. For no image to be displayed, use NONE for EMOTION
+-Remove [] and EMOTION to display Character.png
+LEAVE: Character
+-removes most recently used Character from being displayed

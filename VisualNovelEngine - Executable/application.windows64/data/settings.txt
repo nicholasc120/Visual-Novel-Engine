@@ -1,0 +1,5 @@
+MC: Nich
+Save: s
+Load: l
+Auto: a
+Skip k
