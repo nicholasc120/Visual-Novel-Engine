@@ -1,4 +1,5 @@
-MC: Nich
+MC: MC
 Save: s
 Load: l
 Auto: a
+TextBoxColor: Blue

@@ -76,6 +76,7 @@ void setBackground() {
 }
 
 String speakerImagePath;
+color textBoxColor;
 
 void setAesthetics() {
   //*******Speaker********//
@@ -92,11 +93,11 @@ void setAesthetics() {
   }
   //*******Text Box*******//
   strokeWeight(8); 
-  fill(255, 192, 203, 200);
+  fill(textBoxColor);
   rect(0, 3 * height/4, width, height/4, 10);  
   //*****Speaker Box******//
   rect(0, (3 * height/4) - height/12, width/5, height/12, 10);
-  //********Text**********//
+  //********Text**********//]);
   String speaker = Actor.getCharacterName(script[count]);
   String text = script[count].substring(script[count].indexOf(":") + 2, script[count].length());
 
@@ -183,6 +184,15 @@ void initializeSettings(String[] settings) {
   settings[1] = settings[1].replace("Save: ", ""); 
   settings[2] = settings[2].replace("Leave: ", "");
   settings[3] = settings[3].replace("Auto: ", "");
+  settings[4] = settings[4].replace("TextBoxColor: ", "");
+  switch(settings[4]){
+    case "Blue":
+      textBoxColor = color(80, 188, 255, 200);
+      break;
+    case "Pink":
+      textBoxColor = color(255, 192, 203, 200);
+      break;
+  }
 }
 
 
