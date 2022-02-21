@@ -1,33 +1,28 @@
+import java.io.FileInputStream;
+
 class Music {
   Minim minim;
   AudioPlayer music;
-  String musicPath;
+  String musicName = "";
 
   Music(Minim minim) {
     this.minim = minim;
   }
 
-  int setMusic(String[] script, int count) {
-    //********MUSIC********//
-    if (script[count].startsWith("MUSIC: ") ) {
-      controlMusic(script[count].replace("MUSIC: ", ""));
-      count++;
-    }
-    return count;
-  }
-
-  void controlMusic(String command) {
-
-    if (command.equals("STOP")) {
+  // If it's the STOP command, stop the music
+  // If it's anything else, it must be a song
+  void setMusic(String command) {
+    switch(command) {
+    case "STOP":
+      musicName = "";
+      if (music == null) {
+        break;
+      }
       music.mute();
-    } 
-
-    /*else if (command.equals("FADE")) {
-     music.setVolume(music.getVolume() - 0.01);
-     }
-     */
-    else {
-      musicPath = "Music\\" + script[count].replace("MUSIC: ", "") +".mp3";
+      break;
+    default:
+      musicName = command;
+      String musicPath = "Music\\" + command +".mp3";
       music = minim.loadFile(musicPath, 5000);
       music.loop();
     }

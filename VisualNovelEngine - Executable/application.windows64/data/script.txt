@@ -1,35 +1,30 @@
-SCENE: Classroom
+SETTING: Street
 MUSIC: Ohayou Sayori
-Sayori[NONE]: Heeyyyy!!
-Nich: >I see an annyoingly cheerful girl running towards me waving her arms.
-Sayori: Nich!
-Nich: What is it?
-Sayori: Uhhhmmm...
+TEXT: I'm out in the street
+Sayori: Heyy!!
+TEXT: I see an annoyingly energetic girl running down to me and waving her arms
+ONE: Sayori
+Sayori: Hi I'm here now.
+TWO: Sayori, Sayori
+Sayori: I have to reuse assets because there's only one character
+Sayori: But look, there's two of me now!
+TWO: Sayori, Sayori[Flustered]
+Sayori: Now one of me is flustered.
+CHOICE: Say nothing, Walk Away, Yell, Fall asleep
+1: TEXT: You don't say anything.
+2: TEXT: You leave.
+3: You: AHHHH
+3: ONE: Sayori
+3: Sayori: You scared the other one of me away
+4: TEXT: you fall asleep
+4: TEXT: zzzzzzzzz
+Sayori: You can have between one and four choices.
 MUSIC: STOP
-Sayori[Happy]: I forgot!
-Nich: Yeah that's fair.
-MUSIC: Ohayou Sayori
-Sayori: Yeah.
-Sayori[Joy Blush]: Nich!
-Sayori[Joy Blush]: The color orange is a really silly kind of word isn't it?
-Nich: In what way?
-Sayori: It's the name of the color and of the fruit!
-Nich: Oh I thought you meant how it doesn't rhyme with anything.
-Sayori[Happy]: Well neither does porridge.
-Sayori[Flustered]: Blugh porridge is so gross. It tastes so bad.
-Nich: I'm well aware!
-LEAVE: Sayori
-Nich: >Sayori leaves the room.
-Nich: Porridge is gross!
-MUSIC: STOP
-SCENE: Street
+SETTING: Classroom
 MUSIC: Konoha Peace
-Nich: >A few days later...
-Sayori[Joy Blush]: Nich, I had porridge yesterday!
-Nich: (What should I say?)
-CHOICE: Start crying, Is it different than Oatmeal?, Ew!
-1: Nich: >I start crying
-1: Nich: UUWwwaaahhhh!
-2: Nich: >That's a dumb question
-3: Nich: >That's a dumb thing to say
-Sayori: ???
+ONE: Sayori
+Sayori: Did you know there are sound effects?
+MUSIC: STOP
+Sayori: Watch this!
+SFX: drop books
+TEXT: Sayori knocks the books out of your hand
